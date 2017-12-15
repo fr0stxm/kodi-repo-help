@@ -16,10 +16,12 @@ Things to change:
 The next 3 lines of code indicate where your controlling XML file lives; its associated hash (used for updates) and where
 to obtain the actual zip files themseves.
 You should totally changed these to your URL for where your files are present in a browser.
-Note that for datadir; unless you have indicated that the folder is set to display contents (IndexOptions Off or AutoIndex On)
+Note that for datadir; unless you have indicated that the folder is set to display contents (https://wiki.apache.org/httpd/DirectoryListings)
 then this directory will return a 403 error code in your browser;
 
-THIS IS FINE.  
+Speak to your hosting company if unsure
+
+THIS IS FINE.
 -->
             <info compressed="false">http://my.antisocialhosting.com/addons.xml</info>
             <checksum>http://my.antisocialhosting.com/addons.xml.md5</checksum>
