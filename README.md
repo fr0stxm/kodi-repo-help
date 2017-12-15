@@ -24,4 +24,5 @@ Hopefully you understand this a little better now, if you have any questions, ju
 
 ## Getting started
 
-I could go through how to setup Git or your web hosting 
+I could go through how to setup Git or your web hosting account, but that would take such a long time to explain so I'm going to jump straight into this. 
+
