@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <addon id="repository._your_unique_name" name="My Repository" version="0.0.1" provider-name="Your Name">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="My Repository">
+          <dir>
+            <info compressed="false">http://my.antisocialhosting.com/addons.xml</info>
+            <checksum>http://my.antisocialhosting.com/addons.xml.md5</checksum>
+            <datadir zip="true">http://my.antisocialhosting.com/zips/</datadir>
+          </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>This is my online repository</summary>
+            <description>This is my online repository</description>
+            <platform>all</platform>
+    </extension>
+</addon>
