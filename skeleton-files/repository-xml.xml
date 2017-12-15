@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Things to change:
+1) addon id; this should be unique to you and not ideally used by anyone else to safeguard any conflicts within Kodi
+2) name; Change this the actual name of your repository; you can use colours in this Name
+3) version; given that this is your first build, you can leave this as 0.0.1 but if you change it once loaded, increment this value.
+4) provider-name; this is your name; your unique name that shows people who created it
+-->
     <addon id="repository._your_unique_name" name="My Repository" version="0.0.1" provider-name="Your Name">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
         <extension point="xbmc.addon.repository" name="My Repository">
           <dir>
+<!--
+The next 3 lines of code indicate where your controlling XML file lives; its associated hash (used for updates) and where
+to obtain the actual zip files themseves.
+You should totally changed these to your URL for where your files are present in a browser.
+Note that for datadir; unless you have indicated that the folder is set to display contents (IndexOptions Off or AutoIndex On)
+then this directory will return a 403 error code in your browser;
+
+THIS IS FINE.  
+-->
             <info compressed="false">http://my.antisocialhosting.com/addons.xml</info>
             <checksum>http://my.antisocialhosting.com/addons.xml.md5</checksum>
             <datadir zip="true">http://my.antisocialhosting.com/zips/</datadir>
